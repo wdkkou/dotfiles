@@ -108,8 +108,8 @@ if dein#load_state('~/.vim/dein')
     call dein#add('gi1242/vim-tex-syntax')
     call dein#add('rhysd/vim-clang-format')
     call dein#add('kana/vim-operator-user')
-    call dein#add('faith/vim-go')
-    call dein#add('nsf/gocode')
+    "call dein#add('faith/vim-go')
+    "call dein#add('nsf/gocode')
     call dein#end()
     call dein#save_state()
 endif
@@ -138,12 +138,12 @@ let g:indentLine_fileTypeExclude = ['tex']
 au Filetype tex setlocal conceallevel=0
 
 "vim-go"
-let g:go_highlight_functions = 1
-let g:go_highlight_methods = 1
-let g:go_highlight_fields= 1
-let g:go_highlight_types = 1
-let g:go_highlight_operators = 1
-let g:go_highlight_constraints = 1
-let g:go_metalinter_autosave = 1
-let g:go_fmt_command = "goimports"
-let g:go_version_warning = 0
+"let g:go_highlight_functions = 1
+"let g:go_highlight_methods = 1
+"let g:go_highlight_fields= 1
+"let g:go_highlight_types = 1
+"let g:go_highlight_operators = 1
+"let g:go_highlight_constraints = 1
+"let g:go_metalinter_autosave = 1
+"let g:go_fmt_command = "goimports"
+"let g:go_version_warning = 0
