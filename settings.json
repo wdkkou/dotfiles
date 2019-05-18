@@ -25,5 +25,4 @@
   "eslint.autoFixOnSave": true,
   "java.configuration.checkProjectSettingsExclusions": false,
   "java.errors.incompleteClasspath.severity": "ignore",
-  "workbench.iconTheme": "vscode-icons"
 }
