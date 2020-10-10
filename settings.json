@@ -1,7 +1,7 @@
 {
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "java.home": "/usr/lib/jvm/java-8-openjdk-amd64",
+  "java.home": "/usr/lib/jvm/java-11-openjdk-amd64",
   "vim.useSystemClipboard": true,
   "vim.hlsearch": true,
   "vim.visualstar": true,
@@ -16,26 +16,26 @@
   "java.errors.incompleteClasspath.severity": "ignore",
   "css.validate": true,
   "editor.formatOnSave": true,
-  "eslint.autoFixOnSave": true,
+  // "eslint.autoFixOnSave": true,
   "eslint.enable": true,
-  "eslint.validate": [
-    {
-      "language": "javascript",
-      "autoFix": true
-    },
-    {
-      "language": "javascriptreact",
-      "autoFix": true
-    },
-    {
-      "language": "typescript",
-      "autoFix": true
-    },
-    {
-      "language": "typescriptreact",
-      "autoFix": true
-    }
-  ],
+  // "eslint.validate": [
+  //   {
+  //     "language": "javascript",
+  //     "autoFix": true
+  //   },
+  //   {
+  //     "language": "javascriptreact",
+  //     "autoFix": true
+  //   },
+  //   {
+  //     "language": "typescript",
+  //     "autoFix": true
+  //   },
+  //   {
+  //     "language": "typescriptreact",
+  //     "autoFix": true
+  //   }
+  // ],
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "prettier.eslintIntegration": true,
@@ -44,5 +44,37 @@
   "typescript.tsserver.trace": "verbose",
   "[markdown]": {
     "files.trimTrailingWhitespace": false
-  }
+  },
+  "workbench.startupEditor": "newUntitledFile",
+  "window.zoomLevel": 0,
+  "C_Cpp.clang_format_style": "{ BasedOnStyle: Google, IndentWidth: 4, AlignConsecutiveAssignments: true, AllowShortCaseLabelsOnASingleLine: true, AllowShortIfStatementsOnASingleLine: true, ColumnLimit: 0}",
+  "C_Cpp.updateChannel": "Insiders",
+  "breadcrumbs.enabled": false,
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-e",
+        "$latex=q/uplatex %O -synctex=1 -interaction=nonstopmode -file-line-error %S/",
+        "-e",
+        "$bibtex=q/upbibtex %O %B/",
+        "-e",
+        "$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/",
+        "-e",
+        "$makeindex=q/upmendex %O -o %D %S/",
+        "-e",
+        "$dvipdf=q/dvipdfmx %O -o %D %S/",
+        "-norc",
+        "-pdfdvi",
+        "%DOC%"
+      ]
+    }
+  ],
+  "latex-workshop.message.latexlog.exclude": [
+    "(Font shape `(JY1|JT1|JY2|JT2)(/.*)(sl|it|sc)'.*|Some font shapes were not available.*)"
+  ],
+  "workbench.iconTheme": "vscode-icons",
+  "liveServer.settings.donotShowInfoMsg": true
 }
