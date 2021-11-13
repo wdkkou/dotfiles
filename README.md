@@ -30,3 +30,10 @@ ln -s .vimrc ~/.vimrc
 cd dotfile
 ln -s .bashrc ~/.bashrc
 ```
+
+# gitconfig 設定
+
+```
+cd git
+ln -s $(pwd)/.gitconfig_settings ~/.gitconfig.settings
+```
