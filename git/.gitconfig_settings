@@ -1,2 +1,13 @@
+# .gitconfigファイルにinclude設定を追加必要
+[core]
+pager = less -r
+[pull]
+rebase = false
 [alias]
-log-graph = log --oneline --graph
+# masterにマージ済みのローカルブランチを一括削除
+delete-merged-branch = !git branch --merged | egrep -v '\\*|master' | xargs git branch -d
+# 削除されたリモートブランチと同じローカルブランチを一括削除
+clean-local-branch = !git branch --format '%(refname:short) %(upstream:track)' | grep '\\[gone\\]' | awk '{print $1}' | xargs git branch -D
+lg = log --oneline --graph
+[fetch]
+prune = true
