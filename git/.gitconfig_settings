@@ -9,5 +9,6 @@ delete-merged-branch = !git branch --merged | egrep -v '\\*|master' | xargs git 
 # 削除されたリモートブランチと同じローカルブランチを一括削除
 clean-local-branch = !git branch --format '%(refname:short) %(upstream:track)' | grep '\\[gone\\]' | awk '{print $1}' | xargs git branch -D
 lg = log --oneline --graph
+fco = !fish -c "fzf-checkout-branch"
 [fetch]
 prune = true
