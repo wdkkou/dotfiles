@@ -38,5 +38,5 @@ ln -s .bashrc ~/.bashrc
 ```
 cd git
 ln -s $(pwd)/.gitconfig_settings ~/.gitconfig.settings
-ln -s $(pwd)/.gitconfig  ~/.gitconfig
+cp  $(pwd)/.gitconfig  ~/.gitconfig
 ```
