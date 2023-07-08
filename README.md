@@ -33,7 +33,10 @@ ln -s .bashrc ~/.bashrc
 
 # gitconfig 設定
 
+- userの名前、メールアドレスを使い分けるように
+- 使い分けのための ~/.gitconfig_personal などはそれぞれのPCで用意する
 ```
 cd git
 ln -s $(pwd)/.gitconfig_settings ~/.gitconfig.settings
+ln -s $(pwd)/.gitconfig  ~/.gitconfig
 ```

@@ -1,0 +1,7 @@
+[include]
+path = ~/.gitconfig.settings
+# ディレクトリによって設定を変える
+[includeIf "gitdir:~/git/personal/"]
+path = ~/.gitconfig_personal
+[includeIf "gitdir:~/git/opt/"]
+path = ~/.gitconfig_opt
