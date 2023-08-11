@@ -1,6 +1,7 @@
 # .gitconfigファイルにinclude設定を追加必要
 [core]
 pager = less -r
+editor = nvim
 [pull]
 rebase = false
 [alias]
