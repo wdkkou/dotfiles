@@ -1,5 +1,8 @@
 [include]
 path = ~/.gitconfig.settings
+[user]
+	name = wdkkou
+	email = koukouki7547@gmail.com
 # ディレクトリによって設定を変える
 [includeIf "gitdir:~/git/personal/"]
 path = ~/.gitconfig_personal
